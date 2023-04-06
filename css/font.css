@@ -1,0 +1,10 @@
+@font-face{
+    font-family:'lxk' ;  /* 字体名自定义即可 */
+    src:url('/fontdest/李旭科书法1.4.ttf'); /* 字体文件路径 */
+    font-display : swap;
+}
+
+body{
+    font-family: 'lxk';
+}
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>沐印小站</title>
+  <icon>https://ljhla.github.io.git/icon/android-chrome-144x144.png</icon>
+  <subtitle>沐印</subtitle>
+  <link href="https://ljhla.github.io.git/atom.xml" rel="self"/>
+  
+  <link href="https://ljhla.github.io.git/"/>
+  <updated>2023-04-01T16:23:21.027Z</updated>
+  <id>https://ljhla.github.io.git/</id>
+  
+  <author>
+    <name>wxy</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ROS2自定义消息使用记录</title>
+    <link href="https://ljhla.github.io.git/posts/2llqu4i/"/>
+    <id>https://ljhla.github.io.git/posts/2llqu4i/</id>
+    <published>2023-04-01T15:35:11.000Z</published>
+    <updated>2023-04-01T16:23:21.027Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;起因&quot;&gt;&lt;a href=&quot;#起因&quot; class=&quot;headerlink&quot; title=&quot;起因&quot;&gt;&lt;/a&gt;起因&lt;/h2&gt;&lt;p&gt;最近在做人体姿态估计的项目,需要用到ROS2,但是ROS2的消息类型不够用,所以需要自定义消息类型,这里记录一下自定义消息类型的过程.&lt;/p&gt;
+&lt;p&gt;使用的工具如下&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ROS2</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
