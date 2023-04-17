@@ -6,7 +6,7 @@
   <link href="http://aalive.top/atom.xml" rel="self"/>
   
   <link href="http://aalive.top/"/>
-  <updated>2023-04-14T16:02:06.955Z</updated>
+  <updated>2023-04-17T15:44:22.532Z</updated>
   <id>http://aalive.top/</id>
   
   <author>
@@ -17,11 +17,61 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>acwing-java语法题</title>
+    <link href="http://aalive.top/posts/9f90.html"/>
+    <id>http://aalive.top/posts/9f90.html</id>
+    <published>2023-04-17T15:34:14.000Z</published>
+    <updated>2023-04-17T15:44:22.532Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="http://aalive.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="java" scheme="http://aalive.top/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>算法初体验</title>
+    <link href="http://aalive.top/posts/fe4c.html"/>
+    <id>http://aalive.top/posts/fe4c.html</id>
+    <published>2023-04-11T16:34:14.000Z</published>
+    <updated>2023-04-17T14:43:24.568Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="随笔" scheme="http://aalive.top/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="心得体会" scheme="http://aalive.top/tags/%E5%BF%83%E5%BE%97%E4%BD%93%E4%BC%9A/"/>
+    
+  </entry>
+  
+  <entry>
     <title>测试</title>
     <link href="http://aalive.top/posts/0.html"/>
     <id>http://aalive.top/posts/0.html</id>
     <published>2023-04-10T16:34:14.000Z</published>
-    <updated>2023-04-14T16:02:06.955Z</updated>
+    <updated>2023-04-17T14:30:14.574Z</updated>
     
     
       
@@ -38,6 +88,56 @@
     
     
     <category term="测试" scheme="http://aalive.top/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>这是技术文章模板</title>
+    <link href="http://aalive.top/posts/articletemplate.html"/>
+    <id>http://aalive.top/posts/articletemplate.html</id>
+    <published>2022-12-14T16:34:14.000Z</published>
+    <updated>2023-04-14T16:00:15.350Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="http://aalive.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="技术" scheme="http://aalive.top/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>这是随笔文章模板</title>
+    <link href="http://aalive.top/posts/essay-demo.html"/>
+    <id>http://aalive.top/posts/essay-demo.html</id>
+    <published>2020-01-03T16:34:14.000Z</published>
+    <updated>2023-04-17T13:43:00.624Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="随笔" scheme="http://aalive.top/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="随笔" scheme="http://aalive.top/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
