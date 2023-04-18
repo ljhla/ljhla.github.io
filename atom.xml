@@ -6,7 +6,7 @@
   <link href="http://aalive.top/atom.xml" rel="self"/>
   
   <link href="http://aalive.top/"/>
-  <updated>2023-04-18T03:19:03.431Z</updated>
+  <updated>2023-04-18T09:34:19.964Z</updated>
   <id>http://aalive.top/</id>
   
   <author>
@@ -15,6 +15,256 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>two</title>
+    <link href="http://aalive.top/posts/c627.html"/>
+    <id>http://aalive.top/posts/c627.html</id>
+    <published>2023-04-18T08:59:14.000Z</published>
+    <updated>2023-04-18T09:34:19.964Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="http://aalive.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="算法" scheme="http://aalive.top/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>one</title>
+    <link href="http://aalive.top/posts/56dc.html"/>
+    <id>http://aalive.top/posts/56dc.html</id>
+    <published>2023-04-18T08:57:14.000Z</published>
+    <updated>2023-04-18T09:33:48.844Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="http://aalive.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="算法" scheme="http://aalive.top/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>zero</title>
+    <link href="http://aalive.top/posts/8b6d.html"/>
+    <id>http://aalive.top/posts/8b6d.html</id>
+    <published>2023-04-18T08:52:14.000Z</published>
+    <updated>2023-04-18T09:26:51.755Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="http://aalive.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="算法" scheme="http://aalive.top/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>指针</title>
+    <link href="http://aalive.top/posts/9f93.html"/>
+    <id>http://aalive.top/posts/9f93.html</id>
+    <published>2023-04-18T08:44:14.000Z</published>
+    <updated>2023-04-18T09:14:41.834Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="http://aalive.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="c语言" scheme="http://aalive.top/tags/c%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数组相关</title>
+    <link href="http://aalive.top/posts/6d64.html"/>
+    <id>http://aalive.top/posts/6d64.html</id>
+    <published>2023-04-18T08:42:14.000Z</published>
+    <updated>2023-04-18T09:12:15.536Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="http://aalive.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="c语言" scheme="http://aalive.top/tags/c%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>结构设计的坑</title>
+    <link href="http://aalive.top/posts/79d9.html"/>
+    <id>http://aalive.top/posts/79d9.html</id>
+    <published>2023-04-18T08:41:14.000Z</published>
+    <updated>2023-04-18T09:12:26.107Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="http://aalive.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="c语言" scheme="http://aalive.top/tags/c%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>运算符以及优先级和结合性</title>
+    <link href="http://aalive.top/posts/f6f4.html"/>
+    <id>http://aalive.top/posts/f6f4.html</id>
+    <published>2023-04-18T08:40:14.000Z</published>
+    <updated>2023-04-18T09:34:24.152Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="http://aalive.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="c语言" scheme="http://aalive.top/tags/c%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>c语言的输入输出</title>
+    <link href="http://aalive.top/posts/d410.html"/>
+    <id>http://aalive.top/posts/d410.html</id>
+    <published>2023-04-18T08:38:14.000Z</published>
+    <updated>2023-04-18T09:34:21.309Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="http://aalive.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="c语言" scheme="http://aalive.top/tags/c%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>char的细节</title>
+    <link href="http://aalive.top/posts/7ea3.html"/>
+    <id>http://aalive.top/posts/7ea3.html</id>
+    <published>2023-04-18T08:36:14.000Z</published>
+    <updated>2023-04-18T09:05:50.812Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="http://aalive.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="c语言" scheme="http://aalive.top/tags/c%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于字符串</title>
+    <link href="http://aalive.top/posts/73b4.html"/>
+    <id>http://aalive.top/posts/73b4.html</id>
+    <published>2023-04-18T08:34:14.000Z</published>
+    <updated>2023-04-18T09:02:33.686Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="http://aalive.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="c语言" scheme="http://aalive.top/tags/c%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
   
   <entry>
     <title>面向对象（下）</title>
@@ -146,7 +396,7 @@
     <link href="http://aalive.top/posts/fe4c.html"/>
     <id>http://aalive.top/posts/fe4c.html</id>
     <published>2023-04-11T16:34:14.000Z</published>
-    <updated>2023-04-18T03:33:09.213Z</updated>
+    <updated>2023-04-18T09:29:25.468Z</updated>
     
     
       
