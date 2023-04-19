@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="可爱的舍友, 21世纪在互联网废墟中开辟的个人空间">
+    <meta name="keywords" content="标签: python, 21世纪在互联网废墟中开辟的个人空间">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -18,7 +18,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>可爱的舍友 | aa&#39;s blog</title>
+    <title>标签: python | aa&#39;s blog</title>
     
     <script>
         // 隐藏
@@ -651,31 +651,14 @@ class="themespring" -->
 </div>
 <!-- 春节主题模式样式结束 -->
 
-    <!-- 加密功能 -->
-
-    <script src="/libs/cryptojs/crypto-js.min.js"></script>
-    <script>
-        (function() {
-            let pwd = '4d43ab53fa3f0128495395d19fc46552b784198c8fb4509b8797abd47575f42d';
-
-            if (pwd && pwd.length > 0) {
-                if (pwd !== CryptoJS.SHA256(prompt('请输入密码才可访问哒~')).toString(CryptoJS.enc.Hex)) {
-                    alert('密码错误哦，将返回相册页面哦~');
-                    location.href = '/gallery';
-                }
-            }
-        })();
-    </script>
-
-
-<!-- <div class="bg-cover pd-header about-cover">
+    <div class="bg-cover pd-header about-cover">
     <div class="container">
         <div class="row">
     <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
         <div class="brand">
             <div class="title center-align">
                 
-                    可爱的舍友
+                    
                  
             </div>
 
@@ -698,189 +681,85 @@ class="themespring" -->
     <div class="mohuxiaoguo"></div>
 </div>
 
- -->
 
-<link rel="stylesheet" href="/libs/MyGallery/css/baguetteBox.css">
-<!-- 该主题自带的lightGallery.js在图片多的时候会很卡，所以弃用，使用了一个我在网上找的baguetteBox，很轻量级，就是功能少了点 -->
-<script src="/libs/MyGallery/js/baguetteBox.js"></script> 
-<style>    
+<style>
+    .bg-cover {
+        height: 44vh;
+    }
     #sma {
-        bottom: 150px;
+        bottom: 118px;
     }
-    .my-gallery .photo img {
-        transition: all 0.6s ease-in-out; 
-    }     
-    .my-gallery .photo:hover img {
-        opacity: 0.6;
-        transform: scale(1.05);
-    }      
-    .my-gallery {
-        margin: 20px auto;
-    }   
-    .miaoshus .title {
-        font-family: MV Boli;
-    }
-    .miaoshus {
-        padding: 20px;
-        border: 1px dashed #e6e6e6;
-        color: #969696;
-        position: relative;
-        display: inline-block;
-        width: 75%;
-        background: #fbfbfb50;
-        border-radius: 10px;
-        font-size: 16px;
-        margin: 24px auto 12px;
-        
-    }
-    body.dark .miaoshus {
-        background: 0 0;
-        border: 1px dashed #888;
-    }
-    body {
-        overflow: visible!important;
-    }
-    .box {
-            position: relative;
-            max-width: 1064px;
-        }
-    .box img {
-        width: 350px;
-        height: 350px;
-        vertical-align: top;
-        padding: 8px;
-        border-radius: 20px;
-        transition: all 0.5s;
-    }
-    .box img:hover {
-        transform: scale(1.05);
-    }
-    .page-footer {
-        display: none
-    }
-    body {
-        overflow-y: visible!important;
-    }
-    header {
-        background-color: #000;
-    }
-    .biaotiss {
-            font-family: MV Boli;
-        }   
-    canvas {
-        opacity: 0.3!important;
-    }
-    @media only screen and (max-width: 1058px) {
-        .box {
-            margin-left: 145px;
-        }
-    }
-    @media only screen and (max-width: 770px) {
-        .box {
-            margin-left: 15px;
-        }
-    }
-    @media only screen and (max-width: 500px) {
-        #previous-button, #next-button {
-            display: none;
-        }
-    }
-    @media only screen and (max-width: 380px) {
-        .box {
-            margin-left: -5px;
-        }
-    }
-    @media only screen and (max-width: 323px) {
-        .box img {
-            width: 296px;
-            left: 0;
-        }
+    .bg-cover::before {
+        background-image: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/grid.png);
     }
 </style>
+<main class="content">
+    
 
-<div class="tag-title center-align">
-        <div class="miaoshus">
-            <!-- 福袋按钮 -->
-        <div class="caishendeng">        
-            <div class="guguxian">
-                <img class="caishenpic gugus" src="/medias/spring-img/jiaozi.png" />
-            </div>              
-        </div>
-        <div class="title center-align">
-            “ 
-                可爱的舍友
-              ”
-        </div>
-        “ 光影流年 ”
-        “ 这里有光影流年，还有两朵穿衣裳的云。”
-    </div>
-</div>
-
-<!-- 相册 -->
-<section class="gallery">
-    <div id="myGallery" class="my-gallery">
-        <div class="row">
-            <div class="box">
+    <article id="articles" class="container articles">
+        <div class="row tags-posts">
             
-                
-                
-                                       
-                        <a href="images/1.jpg" data-caption="可爱的舍友">
-                            <img class="mat" src="/medias/loading.svg" data-src="images/1.jpg" alt="img"+0 >
-                        </a>                   
-                
-                                       
-                        <a href="images/2.jpg" data-caption="可爱的舍友">
-                            <img class="mat" src="/medias/loading.svg" data-src="images/2.jpg" alt="img"+1 >
-                        </a>                   
-                
-                                       
-                        <a href="images/3.jpg" data-caption="可爱的舍友">
-                            <img class="mat" src="/medias/loading.svg" data-src="images/3.jpg" alt="img"+2 >
-                        </a>                   
-                
             
+            <div class="article tag-post col s12 m6 l4" data-tags="python">
+                <div class="card">
+                    <a href="/posts/afd6.html">
+                        <div class="card-image tag-image">
+                            
+                            <img src="https://qny.aalive.top//202304181043648.jpg" class="responsive-img" alt="python笔记">
+                            
+                            <span class="card-title">
+                              <!-- 文章卡片hover线条效果 -->
+                              <span class="titlesline">
+                                <style>
+                                  .titlesline {
+                                    width: 0px;
+                                    height: 4px;
+                                    background-color: pink;
+                                    border-radius: 2px;
+                                    position: absolute;
+                                    top: 10px;
+                                    left: 24px;
+                                  }
+                                  body.dark .titlesline {
+                                    filter: brightness(.7);
+                                  }
+                                  article .card .titlesline {
+                                    transition: all 0.36s ease;
+                                  }
+                                  article .card-image:hover .titlesline {
+                                    width: 36px;
+                                  }
+                                </style>
+                              </span>
+                              python笔记
+                            </span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-19
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
+                                技术
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
         </div>
-    </div>
-</section>
+    </article>
+</main>
 
-<script>
-    baguetteBox.run('.gallery', {
-        // 配置参数
-        buttons:Boolean,//是否显示导航按钮。
-        noScrollbars:true,//是否在显示时隐藏滚动条。
-        titleTag:true,//是否使用图片上的title属性作为图片标题
-        async:true,//是否异步加载文件。
-    });
 
-    start()
-        $(window).on('scroll', function(){
-         start();
-    })
-
-    function start(){
-          //.not('[data-isLoaded]')选中已加载的图片不需要重新加载
-        $('.gallery img').not('[data-isLoaded]').each(function(){
-            var $node = $(this)
-            if( isShow($node) ){
-                loadImg($node);
-            }
-        });
-     }
-
-    //判断一个元素是不是出现在窗口(视野)
-    function isShow($node){
-        return $node.offset().top <= $(window).height() + $(window).scrollTop();
-    }
-    //加载图片
-    function loadImg($img){
-    //.attr(值)
-    //.attr(属性名称,值)
-        $img.attr('src', $img.attr('data-src')); //把data-src的值 赋值给src
-        $img.attr('data-isLoaded', 1);//已加载的图片做标记
-    }
-</script>
 
 
     <style>
