@@ -184,13 +184,6 @@
   </url>
   
   <url>
-    <loc>http://aalive.top/qingdan/index.html</loc>
-    
-    <lastmod>2023-04-10</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://aalive.top/project/index.html</loc>
     
     <lastmod>2023-04-10</lastmod>
@@ -198,7 +191,7 @@
   </url>
   
   <url>
-    <loc>http://aalive.top/lab/index.html</loc>
+    <loc>http://aalive.top/qingdan/index.html</loc>
     
     <lastmod>2023-04-10</lastmod>
     
@@ -206,6 +199,13 @@
   
   <url>
     <loc>http://aalive.top/musics/index.html</loc>
+    
+    <lastmod>2023-04-10</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://aalive.top/lab/index.html</loc>
     
     <lastmod>2023-04-10</lastmod>
     
@@ -312,14 +312,14 @@
   </url>
   
   <url>
-    <loc>http://aalive.top/tags/java/</loc>
+    <loc>http://aalive.top/tags/python/</loc>
     <lastmod>2023-04-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://aalive.top/tags/%E5%BF%83%E5%BE%97%E4%BD%93%E4%BC%9A/</loc>
+    <loc>http://aalive.top/tags/java/</loc>
     <lastmod>2023-04-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -333,7 +333,7 @@
   </url>
   
   <url>
-    <loc>http://aalive.top/tags/python/</loc>
+    <loc>http://aalive.top/tags/%E5%BF%83%E5%BE%97%E4%BD%93%E4%BC%9A/</loc>
     <lastmod>2023-04-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
