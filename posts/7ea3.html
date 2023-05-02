@@ -655,7 +655,7 @@ class="themespring" -->
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = 'a5125753c46981848abea8be993291a89f41c71f6012a7bd66191505044fd3dd';
+        let pwd = '';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -990,7 +990,7 @@ h3:hover {
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-04-20
+                    2023-05-02
                 </div>
                 
 
@@ -1014,7 +1014,10 @@ h3:hover {
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="1-什么是ascii码"><a href="#1-什么是ascii码" class="headerlink" title="1. 什么是ascii码"></a>1. 什么是ascii码</h1><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <ol>
+<li>什么是ascii码</li>
+</ol>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token punctuation">&#123;</span>
     <span class="token keyword">char</span> c <span class="token operator">=</span> <span class="token string">'a'</span> <span class="token punctuation">;</span>
     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span>c<span class="token punctuation">)</span> <span class="token punctuation">;</span> <span class="token comment">// 97 </span>
@@ -1023,7 +1026,7 @@ h3:hover {
 
     <span class="token keyword">return</span> <span class="token number">0</span> <span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h1 id="2-字符串末尾会默认添加‘-0’字符"><a href="#2-字符串末尾会默认添加‘-0’字符" class="headerlink" title="2.字符串末尾会默认添加‘\0’字符"></a>2.字符串末尾会默认添加‘\0’字符</h1><h1 id="3-putchar"><a href="#3-putchar" class="headerlink" title="3. putchar"></a>3. putchar</h1><p>（1）当c为一个被单引号（英文状态下）引起来的字符时，输出该字符（注：该字符也可为<a href="https://link.zhihu.com/?target=https%3A//baike.baidu.com/item/%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6">转义字符</a>）；</p>
+<h2 id="2-字符串末尾会默认添加‘-0’字符"><a href="#2-字符串末尾会默认添加‘-0’字符" class="headerlink" title="2.字符串末尾会默认添加‘\0’字符"></a>2.字符串末尾会默认添加‘\0’字符</h2><h2 id="3-putchar"><a href="#3-putchar" class="headerlink" title="3. putchar"></a>3. putchar</h2><p>（1）当c为一个被单引号（英文状态下）引起来的字符时，输出该字符（注：该字符也可为<a href="https://link.zhihu.com/?target=https%3A//baike.baidu.com/item/%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6">转义字符</a>）；</p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token punctuation">&#123;</span>
     <span class="token function">putchar</span><span class="token punctuation">(</span><span class="token string">'a'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -1049,7 +1052,7 @@ h3:hover {
     <span class="token function">putchar</span><span class="token punctuation">(</span>ch1<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token function">putchar</span><span class="token punctuation">(</span>ch2<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h1 id="4-getchar"><a href="#4-getchar" class="headerlink" title="4. getchar"></a>4. getchar</h1><p><strong>getchar返回的是int</strong></p>
+<h2 id="4-getchar"><a href="#4-getchar" class="headerlink" title="4. getchar"></a>4. getchar</h2><p><strong>getchar返回的是int</strong></p>
 <p>注意: 用户键入的回车也算一个字符, 所以getchar会读取到回车</p>
 <p>只读取第一个字符，包含缓冲区里的数据。</p>
 <p><strong>1、getchar其实返回的是字符的ASCII码值（整数）。<br>2、getchar在读取结束或者失败的时候，会返回EOF。</strong></p>
@@ -1075,7 +1078,7 @@ h3:hover {
 
 <span class="token comment">// 清理缓冲区的数据，特指换行，也可以单独使用一个getchar() 来解决。</span>
 <span class="token function">getchar</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 在上面有输入换行的那里，下面用这个，就将换行的数据清理了。</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+<h2 id><a href="#" class="headerlink" title=" "></a> </h2>
             </div>
             <hr/>
 
@@ -2070,7 +2073,7 @@ gets() 获取一行数据，并作为字符串处理
 
             
               &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total number of words: &nbsp;<span class="white-color">
-                77.6k
+                98.2k
               </span>&nbsp;
               
                 

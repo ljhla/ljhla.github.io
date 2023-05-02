@@ -655,7 +655,7 @@ class="themespring" -->
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = 'a5125753c46981848abea8be993291a89f41c71f6012a7bd66191505044fd3dd';
+        let pwd = '';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -990,7 +990,7 @@ h3:hover {
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-04-20
+                    2023-05-02
                 </div>
                 
 
@@ -2193,13 +2193,12 @@ p2是数组的指针，指向这个数组，因为数组在某种意义上本就
         
         <div class="article col s12 m6">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/posts/9f93.html">
+                <a href="/posts/cef.html">
                     <div class="card-image">
                         
-                        <img src="https://qny.aalive.top//202304201712680.jpg" class="responsive-img" alt="指针">
+                        <img src="https://qny.aalive.top//202305021201003.jpg" class="responsive-img" alt="一些细节">
                         
                         <!-- 福袋按钮 -->
                         <div class="caishendeng">        
@@ -2210,25 +2209,24 @@ p2是数组的指针，指向这个数组，因为数组在某种意义上本就
                         <span class="card-title">
                           <!-- 文章卡片hover线条效果 -->
                           <span class="titlesline"></span>
-                          指针
+                          一些细节
                         </span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            0.0补充关于指针==指针P+1 = 指针P + sizeof（指针的类型） *  1== 加1，是在指针占用的内存空间里加1的。
+                            0.00about
+位运算，数据类型的大小，一些定义时的合法规范，使用时的坑点。
 
-（P+1）和  P+1的不同之处：
-
-*(p+1) 将指针变为了p+1，再取p+1的指针的值。
-*p + 
+0.关于字节，位的大小，还有数据类型的大小字 word字节 byte位 bit
+1字=2字节(1 word = 2 byte)1字节=8位(1 byte =
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-20
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-05-02
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -2241,7 +2239,6 @@ p2是数组的指针，指向这个数组，因为数组在某种意义上本就
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -2578,7 +2575,7 @@ p2是数组的指针，指向这个数组，因为数组在某种意义上本就
 
             
               &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total number of words: &nbsp;<span class="white-color">
-                77.6k
+                98.2k
               </span>&nbsp;
               
                 

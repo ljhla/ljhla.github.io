@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="🐈 实战项目, 21世纪在互联网废墟中开辟的个人空间">
+    <meta name="keywords" content="编译流程, 21世纪在互联网废墟中开辟的个人空间">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -18,7 +18,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>🐈 实战项目 | aa&#39;s blog</title>
+    <title>编译流程 | aa&#39;s blog</title>
     
     <script>
         // 隐藏
@@ -651,426 +651,704 @@ class="themespring" -->
 </div>
 <!-- 春节主题模式样式结束 -->
 
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
-        <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                    🐈 实战项目
-                 
-            </div>
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
 
-            <div class="description center-align">
-                
-                    
-                
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://qny.aalive.top//202305021201003.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">编译流程</h1>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 
-<script>
-    $('.bg-cover').css('background-image', 'url(/medias/banner/0.jpg)');
-</script>
 
 
-    </div>
-    <div class="mohuxiaoguo"></div>
-</div>
-
-
+<main class="post-container content">
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
 <style>
-    /* .bg-cover {
-        background-image: url("/medias/banner/projectbg.jpg")!important;
-    } */
-    .bg-cover::before {
-        background-image: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/grid.png);
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+    .suibis[data-spmid="随笔"] {
+        width: 100%!important;
+    }
+    .toc-widget[data-spmid="随笔"],
+    #floating-toc-btn[data-spmid="随笔"]
+    {
+        display: none!important;
+    }
+     
+</style>
+
+<div class="row">
+    
+    
+        <div id="main-content" class="col s12 m12 l9 suibis" data-spmid="c语言">
+            <style>
+    #switchspring {
+        bottom: 223px!important;
     }
     @media only screen and (max-width: 601px) {
         #switchspring {
             bottom: 178px!important;
         }
     }
-    body.dark .page .content li {
-        background: rgba(34,34,34,0.55)!important;
+    #switchchristmas {
+        bottom: 281px!important;
     }
-    
-    #switchspring {
-        bottom: 223px;
-    }
-    .card-content {
-        padding: 12px!important;
-    }
-    .miaoshus {
-        padding: 12px;
-        border: 1px dashed #e6e6e6;
-        color: #969696;
-        position: relative;
-        display: inline-block;
-        width: 95%;
-        background: #fbfbfb50;
-        border-radius: 10px;
-        font-size: 16px;
-        margin: 3px auto 0px;
-    }
-    body.dark .miaoshus {
-        background: 0 0;
-        border: 1px dashed #888;
-    }
-</style>
-<!-- 以下书单模块css样式 -->
-<style>
-    @media screen and (min-width: 768px) {
-        #book .page {
-        /* background-color: hsla(0,0%,100%,.7); */
-        -webkit-box-shadow: 0 8px 16px rgba(0,0,0,.12);
-        box-shadow: 0 8px 16px rgba(0,0,0,.12);
+    @media only screen and (max-width: 601px) {
+        #switchchristmas {
+            bottom: 235px!important;
         }
     }
-    #book .page {
-        overflow: hidden;
-        border-radius: 3px;
+    .ititle {
+        margin: 15px 0;
+        text-align:center;
+        font-family: 'Architects Daughter', cursive;
     }
-    @media screen and (min-width: 768px) {
-        #book .content {
-            grid-template-columns: 1fr 1fr;
-        }
-    }
-    #book .content {
-        display: grid;
-        grid-column-gap: 16px;
-        padding: 16px;
-        text-align: justify;
-    }
-    #book .content li {
-        list-style: none;
-        margin-bottom: 16px;
-        border-radius: 3px;
-        background-color: hsla(0,0%,100%,.7);
-        -webkit-box-shadow: 0 14px 38px rgba(0,0,0,.08), 0 3px 8px rgba(0,0,0,.06);
-        box-shadow: 0 14px 38px rgba(0,0,0,.08), 0 3px 8px rgba(0,0,0,.06);
-        -webkit-transition: all .3s ease 0s,-webkit-transform .6s cubic-bezier(.6,.2,.1,1) 0s;
-        transition: all .3s ease 0s,-webkit-transform .6s cubic-bezier(.6,.2,.1,1) 0s;
-        transition: all .3s ease 0s,transform .6s cubic-bezier(.6,.2,.1,1) 0s;
-        transition: all .3s ease 0s,transform .6s cubic-bezier(.6,.2,.1,1) 0s,-webkit-transform .6s cubic-bezier(.6,.2,.1,1) 0s;
-    }
-    #book .content li .info {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: start;
-        -ms-flex-pack: start;
-        justify-content: flex-start;
-        padding: 20px 20px 0;
-        line-height: 1.7;
-        list-style: none;
-    }
-    .book-container {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-perspective: 600px;
-        perspective: 600px;
-    }
-    .book {
+    .ipage {
+        line-height: 30px;
+        margin: 0 auto;
+        padding: 15px 32px 29px;
+        background-color: #f9f9f9;
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+        -moz-border-radius-bottomleft: 20px 500px;
+        -moz-border-radius-bottomright: 500px 30px;
+        -moz-border-radius-topright: 5px 100px;	
+        -webkit-border-bottom-left-radius: 20px 500px;
+        -webkit-border-bottom-right-radius: 64px 10px;
+        -webkit-border-top-right-radius: 5px 100px;    
+        border-bottom-left-radius: 20px 500px;
+        border-bottom-right-radius: 64px 10px;
+        border-top-right-radius: 5px 100px;           
+        -webkit-background-size: 100% 30px;
+        -moz-box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.2);
+        text-shadow: 0 1px 0 #F6EF97;
         position: relative;
-        width: 100px;
-        height: 150px;
-        -webkit-transform-style: preserve-3d;
-        transform-style: preserve-3d;
-        -webkit-transform: rotateY(-30deg);
-        transform: rotateY(-30deg);
-        -webkit-transition: 1s ease;
-        transition: 1s ease;
-        -webkit-animation: bookRotate 0s 1s ease 0s;
-        animation: bookRotate 0s 1s ease 0s;
-        list-style: none;
     }
-    .book:before {
-        content: " ";
-        position: absolute;
-        left: 0;
-        top: 2px;
-        width: 23px;
-        height: 146px;
-        -webkit-transform: translateX(84.5px) rotateY(90deg);
-        transform: translateX(84.5px) rotateY(90deg);
-        background: -webkit-gradient(linear,left top,right top,from(#fff),color-stop(5%,#f9f9f9),color-stop(10%,#fff),color-stop(15%,#f9f9f9),color-stop(20%,#fff),color-stop(25%,#f9f9f9),color-stop(30%,#fff),color-stop(35%,#f9f9f9),color-stop(40%,#fff),color-stop(45%,#f9f9f9),color-stop(50%,#fff),color-stop(55%,#f9f9f9),color-stop(60%,#fff),color-stop(65%,#f9f9f9),color-stop(70%,#fff),color-stop(75%,#f9f9f9),color-stop(80%,#fff),color-stop(85%,#f9f9f9),color-stop(90%,#fff),color-stop(95%,#f9f9f9),to(#fff));
-        background: linear-gradient(90deg,#fff,#f9f9f9 5%,#fff 10%,#f9f9f9 15%,#fff 20%,#f9f9f9 25%,#fff 30%,#f9f9f9 35%,#fff 40%,#f9f9f9 45%,#fff 50%,#f9f9f9 55%,#fff 60%,#f9f9f9 65%,#fff 70%,#f9f9f9 75%,#fff 80%,#f9f9f9 85%,#fff 90%,#f9f9f9 95%,#fff);
+.izhengwen {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: auto;
+    background: repeating-linear-gradient(to bottom, #f9f9f9, #f9f9f9 31px, #6BA2D8 1px, #f9f9f9);
+    background-size: 100% 32px;
+}
+.izhengwen p {
+    letter-spacing: .1rem;
+}
+#articleContent p {
+    margin: 0
+}
+.ititle {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.45rem!important;
+    padding: 10px auto;
+}
+.izhengwen p {
+    position: relative;
+    line-height: 2.2rem!important;
+    text-indent: 2em;
+    font-family: 'Architects Daughter', cursive!important;
+    font-size: 1.45rem!important;
+}
+.ipage::before {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    right: 52px;
+    z-index: 4;
+    width: 4px;
+    height: 100%;
+    border-left: 1px solid #fca1a1;
+}
+.izhengwen p:nth-child(odd):before {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -16px;
+    z-index: 3;
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+}
+.ipage:after {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 52px;
+    z-index: 3;
+    width: 4px;
+    height: 100%;
+    border-left: 4px double #fca1a1;
+}
+.ipage p {
+    padding: 0 2em;
+    color: #333!important;
+}
+body.dark .ipage {
+    opacity: 0.85;
+}
+/*小屏幕下(手机类)的样式*/
+@media only screen and (max-width: 600px) {
+    .ipage {
+        padding: 15px 23px 29px;
     }
-    .book>:first-child {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100px;
-        height: 150px;
-        -webkit-transform: translateZ(12.5px);
-        transform: translateZ(12.5px);
-        border-radius: 0 2px 2px 0;
-        -webkit-box-shadow: 5px 5px 20px #666;
-        box-shadow: 5px 5px 20px #666;
+    .ipage:after {
+        left: 36px;
     }
-    .book:after {
-        content: " ";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100px;
-        height: 150px;
-        -webkit-transform: translateZ(-12.5px);
-        transform: translateZ(-12.5px);
-        background-color: #555;
-        border-radius: 0 2px 2px 0;
+    .ipage::before {
+        right: 36px;    
     }
-    #book .content li .info>div {
-        margin-left: 32px;
+    .ipage p, .ititle {
+        padding: 0 0.9em;
     }
-    #book .content li .info h3 {
-        font-size: 16px;
-    }
-    #book .content li .info p a {
-        position: relative;
-        color: #b854d4;
-    }
-    #book .content li .info p a:before {
-        content: " " attr(href);
-        position: absolute;
-        padding: 0 4px;
-        width: -webkit-max-content;
-        width: -moz-max-content;
-        width: max-content;
-        pointer-events: none;
-        font-family: Fontello;
-        font-size: 12px;
-        -webkit-box-shadow: 0 14px 38px rgba(0,0,0,.08), 0 3px 8px rgba(0,0,0,.06);
-        box-shadow: 0 14px 38px rgba(0,0,0,.08), 0 3px 8px rgba(0,0,0,.06);
-        border-radius: 3px;
-        background-color: #fff;
-        opacity: 0;
-        -webkit-transform: scale(.7) translateY(-75%);
-        transform: scale(.7) translateY(-75%);
-        -webkit-transform-origin: left center;
-        transform-origin: left center;
-        -webkit-transition: all .3s ease 0s;
-        transition: all .3s ease 0s;
-    }
-    #book .content li .info p a:after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 1.5px;
-        background-color: #b854d4;
-        -webkit-transform: scaleX(0);
-        transform: scaleX(0);
-        -webkit-transform-origin: bottom right;
-        transform-origin: bottom right;
-        -webkit-transition: -webkit-transform .3s ease-out;
-        transition: -webkit-transform .3s ease-out;
-        transition: transform .3s ease-out;
-        transition: transform .3s ease-out,-webkit-transform .3s ease-out;
-    }
-    #book .content li .info .fa-star {
-        margin-right: 4px;
-        color: #d68fe9;
-    }
-    .icon-star:before {
-        content: "\e80b";
-    }
-    [class*=" icon-"]:before, [class^=icon-]:before {
-        font-family: Fontello;
-        font-style: normal;
-        font-weight: 400;
-        display: inline-block;
-        text-decoration: inherit;
-        width: 1em;
-        text-align: center;
-        font-variant: normal;
-        text-transform: none;
-        line-height: 1em;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
-    #book .content li .description {
-        padding: 12px 20px;
-        font-size: 14px;
-        line-height: 1.7;
-    }
-    #book .content li .info p {
-        font-size: 14px;
-        line-height: 1.7;
 
-    }
-    @media screen and (min-width: 768px) {
-        #book .content li:hover {
-            -webkit-transform: translateY(-4px);
-            transform: translateY(-4px);
-            -webkit-box-shadow: 0 14px 38px rgba(0,0,0,.14), 0 3px 8px rgba(0,0,0,.12);
-            box-shadow: 0 14px 38px rgba(0,0,0,.14), 0 3px 8px rgba(0,0,0,.12);
-        }
-    }
-    #book .content li {
-        list-style: none;
-        margin-bottom: 16px;
-        border-radius: 3px;
-        background-color: hsla(0,0%,100%,.7);
-        -webkit-box-shadow: 0 14px 38px rgba(0,0,0,.08), 0 3px 8px rgba(0,0,0,.06);
-        box-shadow: 0 14px 38px rgba(0,0,0,.08), 0 3px 8px rgba(0,0,0,.06);
-        -webkit-transition: all .3s ease 0s,-webkit-transform .6s cubic-bezier(.6,.2,.1,1) 0s;
-        transition: all .3s ease 0s,-webkit-transform .6s cubic-bezier(.6,.2,.1,1) 0s;
-        transition: all .3s ease 0s,transform .6s cubic-bezier(.6,.2,.1,1) 0s;
-        transition: all .3s ease 0s,transform .6s cubic-bezier(.6,.2,.1,1) 0s,-webkit-transform .6s cubic-bezier(.6,.2,.1,1) 0s;
-    }
-    #book .content li:hover .book {
-        -webkit-transform: rotateY(0deg);
-        transform: rotateY(0deg);
-    }
-    .quote {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        position: relative;
-        margin-bottom: 16px;
-        padding: 32px 0;
-    }
-    .quote i:first-child {
-        top: 0;
-        left: 16px;
-    }
-    .quote i {
-        position: absolute;
-        font-size: 24px;
-    }
-    .icon-quote-left:before {
-        content: "\f10d";
-    }
-    [class*=" icon-"]:before, [class^=icon-]:before {
-        font-family: Fontello;
-        font-style: normal;
-        font-weight: 400;
-        display: inline-block;
-        text-decoration: inherit;
-        width: 1em;
-        text-align: center;
-        font-variant: normal;
-        text-transform: none;
-        line-height: 1em;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
+}
+h3 {
+    font-size: 1.32rem;
+    font-weight: 400;
+    color: #101012;
+    transition: 0.8s;
+    cursor: pointer;
+}
+h3:hover {
+    transform: translateX(15px);
+}
 </style>
-<main class="content">
-    <div class="container">
-        <div class="card">
+
+<!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        
+        <div class="card-content article-info">
             <!-- 福袋按钮 -->
             <div class="caishendeng">        
-                <div class="guguxian">
-                    <img class="caishenpic gugus" src="/medias/spring-img/gu1.png" />
+                <div class="guguxian wenzhangxian">
+                    <img class="caishenpic gugus" src="/medias/spring-img/caishen.png" />
                 </div>              
             </div>
-            <div class="card-content">
-                <div class="tag-title center-align">
-                    <div class="miaoshus">
-                        <div class="title center-align">“ 博主项目一览 ”
+            <!-- 圣诞按钮 -->
+            <div class="shengdandeng">        
+                <div class="shengdanxian" style="left: 50%;">
+                    <img class="shengdanpic fudai" src="/medias/christmas-img/shengdanren4.png" />
+                </div>              
+            </div>
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/c%E8%AF%AD%E8%A8%80/">
+                                <span class="chip bg-color">c语言</span>
+                            </a>
+                        
                     </div>
-
-                    <!-- 书单模块开始 -->
-                    <div id="book">
-                    <div class="page">
-                      <ul class="content">
-                        <!-- 每个li标签内容代表一本书籍的所有信息 -->
-                        <li>
-                            <div class="info">
-                                <a href="https://gitee.com/nekodeng/vue_shop_system" target="_blank" rel="noreferrer noopener" class="book-container">
-                                    <div class="book">
-                                        <img src="/medias/project-img/vue_system.png">
-                                    </div>
-                                </a>
-                                <div>
-                                    <a href="https://gitee.com/nekodeng/vue_shop_system" target="_blank"><h3>《 vue+element商品后台管理系统 》</h3></a>
-                                    <p>作者：itsNekoDeng</p>
-                                    <p>完成时间：2019-03-06</p>
-                                    <p>项目进度：大体已完成...</p>
-                                    <p>
-                                        <span>项目源码：</span>
-                                        <a href="https://gitee.com/nekodeng/vue_shop_system" target="_blank" rel="noopener noreferrer"> vue+element商品后台管理系统 </a>
-                                    </p>
-                                    <p> 
-                                        <span>推荐指数：</span>
-                                        <span></span>
-                                        <!-- 推荐指数，多少个星星就有以下多少个i标签 -->
-                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                    </p>
-                                </div>
-                            </div>
-                            <p class="description">“ 一个基于vue和element的后台管理系统，vue2.x + element，其中本源码中的vue_api_server文件为项目的api接口文件 ”</p>
-                        </li>  
-                        <!-- 每个li标签内容代表一本书籍的所有信息 -->
-                        <li>
-                            <div class="info">
-                                <a href="https://github.com/nekodeng/supermall-vue2-cli3" target="_blank" rel="noreferrer noopener" class="book-container">
-                                    <div class="book">
-                                        <img src="/medias/project-img/vue-mall.png">
-                                    </div>
-                                </a>
-                                <div>
-                                    <a href="https://github.com/nekodeng/supermall-vue2-cli3" target="_blank"><h3>《 仿蘑菇街H5vue项目-vue2-cli3 》</h3></a>
-                                    <p>作者：itsNekoDeng</p>
-                                    <p>完成时间：2019-02-08</p>
-                                    <p>项目进度：大体已完成...</p>
-                                    <p>
-                                        <span>项目源码：</span>
-                                        <a href="https://github.com/nekodeng/supermall-vue2-cli3" target="_blank" rel="noopener noreferrer"> 仿蘑菇街H5vue项目-vue2-cli3 </a>
-                                    </p>
-                                    <p> 
-                                        <span>推荐指数：</span>
-                                        <span></span>
-                                        <!-- 推荐指数，多少个星星就有以下多少个i标签 -->
-                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                    </p>
-                                </div>
-                            </div>
-                            <p class="description">“ About
-                                After learning VUE at B station, the project of imitation mushroom street actual combat, using VUE family bucket ”</p>
-                        </li>
-                      </ul>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
+                                技术
+                            </a>
+                        
                     </div>
-                  <!-- 书单模块结束 -->
-                  </div>
-                  </div>
+                    
                 </div>
             </div>
-            <div class="card">
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-05-02
+                </div>
                 
 
                 
-
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2023-05-02
+                </div>
                 
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    831
+                </div>
+                
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    3 分
+                </div>
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>C 语言的编译过程包括了预处理、编译、汇编和链接四个步骤，下面对这四个步骤进行详细解释。</p>
+<h2 id="1-预处理"><a href="#1-预处理" class="headerlink" title="1.预处理"></a>1.预处理</h2><p>在编译之前，C 语言编译器需要先对源代码进行预处理。预处理器读取源代码并进行文本替换、条件编译等操作，生成一个经过预处理的源文件，例如：</p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token expression">PI <span class="token number">3.1415926</span></span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#123;</span>
+    <span class="token keyword">int</span> r <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+    <span class="token keyword">float</span> area<span class="token punctuation">;</span>
+
+    area <span class="token operator">=</span> PI <span class="token operator">*</span> r <span class="token operator">*</span> r<span class="token punctuation">;</span>
+
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Area of the circle: %f\n"</span><span class="token punctuation">,</span> area<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>经过预处理之后，该代码会变成：</p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"># <span class="token number">1</span> <span class="token string">"test.c"</span>
+# <span class="token number">1</span> <span class="token string">"&lt;built-in>"</span>
+# <span class="token number">1</span> <span class="token string">"&lt;command-line>"</span>
+# <span class="token number">1</span> <span class="token string">"test.c"</span>
+
+# <span class="token number">1</span> <span class="token string">"/usr/include/stdio.h"</span> <span class="token number">1</span> <span class="token number">3</span> <span class="token number">4</span>
+# <span class="token number">27</span> <span class="token string">"/usr/include/stdio.h"</span> <span class="token number">3</span> <span class="token number">4</span>
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#123;</span>
+    <span class="token keyword">int</span> r <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+    <span class="token keyword">float</span> area<span class="token punctuation">;</span>
+
+    area <span class="token operator">=</span> <span class="token number">3.1415926</span> <span class="token operator">*</span> r <span class="token operator">*</span> r<span class="token punctuation">;</span> <span class="token comment">// 宏定义已经替换</span>
+
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Area of the circle: %f\n"</span><span class="token punctuation">,</span> area<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>在这个阶段，预处理器主要做以下事情：</p>
+<ul>
+<li><p>处理预编译指令，如宏定义、条件编译等；</p>
+</li>
+<li><p>包含头文件；</p>
+</li>
+<li><p>删除注释；</p>
+</li>
+<li><p>等。</p>
+</li>
+</ul>
+<h2 id="2-编译"><a href="#2-编译" class="headerlink" title="2.编译"></a>2.编译</h2><p>在预处理完成之后，C 语言编译器将会编译经过预处理的源文件，并输出汇编代码。编译器会检查代码的语法、类型等错误，并将高级语言代码转换为汇编代码。</p>
+<p>在上述例子中，经过编译器处理之后，会生成一个汇编代码文件，例如：</p>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c">    <span class="token punctuation">.</span>file    <span class="token string">"test.c"</span>
+    <span class="token punctuation">.</span>text
+    <span class="token punctuation">.</span>section    <span class="token punctuation">.</span>rodata
+<span class="token punctuation">.</span>LC0<span class="token operator">:</span>
+    <span class="token punctuation">.</span>string <span class="token string">"Area of the circle: %f\n"</span>
+    <span class="token punctuation">.</span>text
+    <span class="token punctuation">.</span>globl    main
+    <span class="token punctuation">.</span>type    main<span class="token punctuation">,</span> @function
+main<span class="token operator">:</span>
+<span class="token punctuation">.</span>LFB0<span class="token operator">:</span>
+    <span class="token punctuation">.</span>cfi_startproc
+    endbr64
+    pushq    <span class="token operator">%</span>rbp
+    <span class="token punctuation">.</span>cfi_def_cfa_offset <span class="token number">16</span>
+    <span class="token punctuation">.</span>cfi_offset <span class="token number">6</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">16</span>
+    movq    <span class="token operator">%</span>rsp<span class="token punctuation">,</span> <span class="token operator">%</span>rbp
+    <span class="token punctuation">.</span>cfi_def_cfa_register <span class="token number">6</span>
+    subq    $<span class="token number">16</span><span class="token punctuation">,</span> <span class="token operator">%</span>rsp
+    movl    $<span class="token number">2</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">4</span><span class="token punctuation">(</span><span class="token operator">%</span>rbp<span class="token punctuation">)</span>
+    fldpi
+    fildl    <span class="token operator">-</span><span class="token number">4</span><span class="token punctuation">(</span><span class="token operator">%</span>rbp<span class="token punctuation">)</span>
+    fmul
+    fmul
+    fstps    <span class="token operator">-</span><span class="token number">8</span><span class="token punctuation">(</span><span class="token operator">%</span>rbp<span class="token punctuation">)</span>
+    movl    $<span class="token punctuation">.</span>LC0<span class="token punctuation">,</span> <span class="token operator">%</span>eax
+    movss    <span class="token operator">-</span><span class="token number">8</span><span class="token punctuation">(</span><span class="token operator">%</span>rbp<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">%</span>xmm1
+    movl    $<span class="token number">1</span><span class="token punctuation">,</span> <span class="token operator">%</span>esi
+    movq    <span class="token operator">%</span>xmm1<span class="token punctuation">,</span> <span class="token operator">%</span>xmm0
+    call    printf
+    movl    $<span class="token number">0</span><span class="token punctuation">,</span> <span class="token operator">%</span>eax
+    leave
+    <span class="token punctuation">.</span>cfi_def_cfa <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">8</span>
+    ret
+    <span class="token punctuation">.</span>cfi_endproc
+<span class="token punctuation">.</span>LFE0<span class="token operator">:</span>
+    <span class="token punctuation">.</span>size    main<span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token operator">-</span>main
+    <span class="token punctuation">.</span>ident    <span class="token string">"GCC: (Ubuntu 9.3.0-10ubuntu2) 9.3.0"</span>
+    <span class="token punctuation">.</span>section    <span class="token punctuation">.</span>note<span class="token punctuation">.</span>GNU<span class="token operator">-</span>stack<span class="token punctuation">,</span><span class="token string">""</span><span class="token punctuation">,</span>@progbits
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="3-汇编"><a href="#3-汇编" class="headerlink" title="3.汇编"></a>3.汇编</h2><p>汇编器接收编译器生成的汇编代码，并将其转化为可执行机器码。在汇编阶段中，将会对代码进行一系列的优化，生成一种可以被计算机所理解的指令。</p>
+<h2 id="4-链接"><a href="#4-链接" class="headerlink" title="4.链接"></a>4.链接</h2><p>链接器将多个目标文件和库文件链接成一个可执行文件。在链接阶段中，链接器将目标文件中未定义的函数或变量链接到其他目标文件或库文件中已经定义的函数或变量上。如果在链接阶段中遇到了未定义的函数或变量，则会报链接错误。</p>
+<p>最后生成一个可执行的exe文件。</p>
+<p>经过编译、汇编和链接的机器代码和数据，可以被操作系统直接加载并执行</p>
+<p>流程：</p>
+<blockquote>
+<p>C 语言的编译过程一般可以分为四个步骤：预处理、编译、汇编和链接。</p>
+<ul>
+<li><p>首先，预处理器读取源代码并进行文本替换、条件编译等操作，得到经过预处理的源代码。</p>
+</li>
+<li><p>其次，编译器将经过预处理的源代码转化为汇编代码，生成汇编文件。</p>
+</li>
+<li><p>第三步，汇编器将汇编代码转化为机器码，生成目标文件。</p>
+</li>
+<li><p>最后，链接器将目标文件与库文件进行链接，生成可执行文件。</p>
+</li>
+</ul>
+<p>这个工作流程可以叠加多次，因为在链接过程中可能需要链接多个目标文件和库文件。</p>
+</blockquote>
+
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">ljhaa</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://aalive.top/posts/40a0.html">http://aalive.top/posts/40a0.html</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">ljhaa</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/c%E8%AF%AD%E8%A8%80/">
+                                    <span class="chip bg-color">c语言</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="qq,wechat,weibo,douban,twitter" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
                 <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">感谢投喂哦~</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
     .valine-card {
         margin: 1.5rem auto;
     }
@@ -1434,13 +1712,318 @@ class="themespring" -->
     });
 </script>
 
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/posts/972.html">
+                    <div class="card-image">
+                        
+                        <img src="https://qny.aalive.top//202304181043644.jpg" class="responsive-img" alt="小甲鱼习题1-25选做">
+                        
+                        <!-- 福袋按钮 -->
+                        <div class="caishendeng">        
+                            <div class="caishenxian wenzhangxian">
+                                <img class="caishenpic lala" src="/medias/spring-img/fish.png" />
+                            </div>              
+                        </div>
+                        <span class="card-title">
+                          <!-- 文章卡片hover线条效果 -->
+                          <span class="titlesline"></span>
+                          小甲鱼习题1-25选做
+                        </span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            1.【程序1】1~4组成无重复数字的三位数直接暴力枚举就好了
+int main()
+&#123;
+    //1-4组成无重复数字的三位数
+    for(int i = 1 ; i &lt;= 4 ; i++)
+        for(i
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-05-02
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
+                                    技术
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
                 
-                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/c%E8%AF%AD%E6%B3%95%E9%A2%98/">
+                        <span class="chip bg-color">c语法题</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
+        
+        
+        <div class="article col s12 m6">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/posts/dec5.html">
+                    <div class="card-image">
+                        
+                        <img src="https://qny.aalive.top//202305021201003.jpg" class="responsive-img" alt="文件">
+                        
+                        <!-- 福袋按钮 -->
+                        <div class="caishendeng">        
+                            <div class="caishenxian wenzhangxian">
+                                <img class="caishenpic lala" src="/medias/spring-img/fish.png" />
+                            </div>              
+                        </div>
+                        <span class="card-title">
+                          <!-- 文章卡片hover线条效果 -->
+                          <span class="titlesline"></span>
+                          文件
+                        </span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            0.什么是文件
+1.文本文件和二进制文件c语言中主要有两种文件，文本文件和二进制文件。
+
+2.打开和关闭文件
+2.1打开文件2.1.1fopen（）函数FILE *fp; // 定义文件指针
+fp = fopen("filename", "
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-05-02
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
+                                    技术
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/c%E8%AF%AD%E8%A8%80/">
+                        <span class="chip bg-color">c语言</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
     </div>
+</article>
+<style>
+  .articles .row .article {
+    position: relative;
+  }
+</style>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('30')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: aa&#39;s blog<br />'
+            + '文章作者: ljhaa<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+
+        </div>
+        
+        
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        
+        
+        <div class="toc-widget" data-spmid="c语言">
+            <div class="toc-title">
+                <i class="far fa-list-alt"></i>
+                &nbsp;&nbsp;目录
+            </div>
+            <div id="toc-content"></div>
+        </div>
+        
+        
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+    
+<div id="floating-toc-btn" class="hide-on-med-and-down" data-spmid="c语言">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
 </main>
+
+
 
 
     <style>

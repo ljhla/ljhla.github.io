@@ -655,7 +655,7 @@ class="themespring" -->
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = 'a5125753c46981848abea8be993291a89f41c71f6012a7bd66191505044fd3dd';
+        let pwd = '';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -990,21 +990,21 @@ h3:hover {
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-04-20
+                    2023-05-02
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    957
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    4 分
                 </div>
                 
 
@@ -1062,6 +1062,27 @@ h3:hover {
 <p>再计算a <em> 4，此时a=15，所以a </em> 4=60，但是注意这个表达式并没有对a赋值，仅仅是一个乘法运算<br>根据逗号表达式的值取<strong>逗号中最右表达式的值的原则</strong>，(a=3 <em> 5,a </em> 4)的值为60</p>
 <p>再看a+5，<br>之前运算(a=3 <em> 5,a</em>4)时，a已经被赋值为15，所以这里a+5=15+5=20<br>所以a+5这个表达式的值为20</p>
 <p>再根据逗号表达式的值取逗号中最右表达式的值的原则，<br>表达式(a=3 <em> 5,a</em>4),a+5 的值即为a+5的值，也就等于20了</p>
+<h2 id="4-关于Printf函数中的坑"><a href="#4-关于Printf函数中的坑" class="headerlink" title="4.关于Printf函数中的坑"></a>4.关于Printf函数中的坑</h2><blockquote>
+<p>printf函数在不同的环境下，运行顺序是不一样的</p>
+<p>Windows：执行的顺序是从右到左的</p>
+</blockquote>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c">    <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span> <span class="token punctuation">;</span>
+
+    <span class="token keyword">while</span><span class="token punctuation">(</span>i <span class="token operator">&lt;=</span> <span class="token number">100</span><span class="token punctuation">)</span>
+    <span class="token punctuation">&#123;</span>
+
+<span class="token comment">//        printf("%d的平方是%d\n",i-1,square(i++)) ;</span>
+        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d %d\n"</span><span class="token punctuation">,</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span>i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">;</span> 
+    <span class="token punctuation">&#125;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>例如上面的这个案例</p>
+<p>那个i-1刚开始一直理解不明白，后来才发现printf中的运行顺序是从右到左的，并不是直接的理解从左到右</p>
+<p>这点需要注意。</p>
+<p><code>除了考试或者考察你的这个知识点，其余时候不会有这种错误的示范的，这种写法是不规范的</code></p>
+<p>==注意==</p>
+<blockquote>
+<p>并不是只有printf该函数是这样的，我上面没有描述清楚，</p>
+</blockquote>
 
             </div>
             <hr/>
@@ -2057,7 +2078,7 @@ gets() 获取一行数据，并作为字符串处理
 
             
               &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total number of words: &nbsp;<span class="white-color">
-                77.6k
+                98.2k
               </span>&nbsp;
               
                 

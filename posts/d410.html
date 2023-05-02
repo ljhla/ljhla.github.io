@@ -655,7 +655,7 @@ class="themespring" -->
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = 'a5125753c46981848abea8be993291a89f41c71f6012a7bd66191505044fd3dd';
+        let pwd = '';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -990,14 +990,14 @@ h3:hover {
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-04-20
+                    2023-05-02
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    854
+                    877
                 </div>
                 
 
@@ -1014,7 +1014,7 @@ h3:hover {
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="0-常见的输入函数"><a href="#0-常见的输入函数" class="headerlink" title="0.常见的输入函数"></a>0.常见的输入函数</h1><blockquote>
+                <h2 id="0-常见的输入函数"><a href="#0-常见的输入函数" class="headerlink" title="0.常见的输入函数"></a>0.常见的输入函数</h2><blockquote>
 <ul>
 <li><p><strong>scanf() 可输入多种类型的数据</strong></p>
 </li>
@@ -1028,7 +1028,7 @@ h3:hover {
 </li>
 </ul>
 </blockquote>
-<h1 id="1-printf用法详解"><a href="#1-printf用法详解" class="headerlink" title="1.printf用法详解"></a>1.printf用法详解</h1><h2 id="1-2输出控制符"><a href="#1-2输出控制符" class="headerlink" title="1.2输出控制符"></a>1.2输出控制符</h2><p>%d</p>
+<h2 id="1-printf用法详解"><a href="#1-printf用法详解" class="headerlink" title="1.printf用法详解"></a>1.printf用法详解</h2><h2 id="1-2输出控制符"><a href="#1-2输出控制符" class="headerlink" title="1.2输出控制符"></a>1.2输出控制符</h2><p>%d</p>
 <p>%ld</p>
 <p>%c    字符型</p>
 <p>%s    字符串</p>
@@ -1042,7 +1042,8 @@ h3:hover {
 <li><p>printf(“%u”)    u 是打印无符号的（ unsigned）</p>
 <h1 id><a href="#" class="headerlink" title=" "></a> </h1></li>
 </ul>
-<h1 id="2-scanf"><a href="#2-scanf" class="headerlink" title="2.scanf"></a>2.scanf</h1><p>scanf(“&lt;格式化字符串&gt;”, &lt;地址表&gt;);</p>
+<p><code>c语言中的printf函数，有一个坑，详情见“运算符和表达式章节</code></p>
+<h2 id="2-scanf"><a href="#2-scanf" class="headerlink" title="2.scanf"></a>2.scanf</h2><p>scanf(“&lt;格式化字符串&gt;”, &lt;地址表&gt;);</p>
 <h2 id="2-1-输入函数原理"><a href="#2-1-输入函数原理" class="headerlink" title="2.1  输入函数原理"></a>2.1  输入函数原理</h2><p>详情也可以看 章节 “关于  char  的那一章节。 </p>
 <p>输入函数的原理：</p>
 <p><strong>在输入函数中包含了 scanf()函数和 getchar()函数，它们都是从键盘上来读取我们的数据，但它们不是直接从键盘上来读取我们的数据。它们和键盘之间有一个区域叫缓冲区。输入函数先来看缓冲区中是否有数据，如果有，它直接就拿走了，不需要从键盘输入，如果缓冲区什么都没有，则需要从键盘输入，再拿走</strong></p>
@@ -1050,9 +1051,9 @@ h3:hover {
 <p><strong>代码：getchar()  此时先输入一个字符 例如输入一个</strong> <strong>A</strong> 吧！</p>
 <p><strong>分析：在程序开始运行之后，缓冲区里什么都没有，我们只能通过键盘输入</strong>A<strong> </strong>，为了让字符<strong>**A</strong> <strong>进入缓冲区 我们其实不知不觉中输入了</strong> <strong>\n</strong> <strong>最终在缓冲区里出现的是</strong> <strong>A\n</strong></p>
 <p><img src="https://qny.aalive.top//202304181641852.png" alt="image-20230323111543618"></p>
-<h2 id="2-2scanf的常见问题"><a href="#2-2scanf的常见问题" class="headerlink" title="2.2scanf的常见问题"></a>2.2scanf的常见问题</h2><h1 id="3-putchar"><a href="#3-putchar" class="headerlink" title="3.putchar"></a>3.putchar</h1><h1 id="4-getcahr"><a href="#4-getcahr" class="headerlink" title="4.getcahr"></a>4.getcahr</h1><p>关于putchar和getchar的详细细节，看笔记 “1.关于char“</p>
+<h2 id="2-2scanf的常见问题"><a href="#2-2scanf的常见问题" class="headerlink" title="2.2scanf的常见问题"></a>2.2scanf的常见问题</h2><h2 id="3-putchar"><a href="#3-putchar" class="headerlink" title="3.putchar"></a>3.putchar</h2><h2 id="4-getcahr"><a href="#4-getcahr" class="headerlink" title="4.getcahr"></a>4.getcahr</h2><p>关于putchar和getchar的详细细节，看笔记 “1.关于char“</p>
 <p>只能输入或者输出一个字符，能输出字符串。</p>
-<h1 id="5-puts"><a href="#5-puts" class="headerlink" title="5.puts"></a>5.puts</h1><p>puts函数输出字符串并换行</p>
+<h2 id="5-puts"><a href="#5-puts" class="headerlink" title="5.puts"></a>5.puts</h2><p>puts函数输出字符串并换行</p>
 <p>调用格式为puts（s）</p>
 <p>其中s为字符串变量（字符串数组   ， 字符串指针） </p>
 <p>puts函数的作用于  printf（“%s\n”,s) 相同</p>
@@ -1065,7 +1066,7 @@ h3:hover {
 　　<span class="token function">puts</span><span class="token punctuation">(</span>f<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>注意：puts函数只能输出字符串，不能输出数值或者进行格式变换</p>
-<h1 id="6-gets"><a href="#6-gets" class="headerlink" title="6.gets"></a>6.gets</h1><p>gets（n)  n是字符串数组</p>
+<h2 id="6-gets"><a href="#6-gets" class="headerlink" title="6.gets"></a>6.gets</h2><p>gets（n)  n是字符串数组</p>
 <p>gets（） 函数用来读取字符串直到回车结束，回车符不属于这个字符串，</p>
 <h2 id="6-1-gets和scanf读取字符串时的差异"><a href="#6-1-gets和scanf读取字符串时的差异" class="headerlink" title="6.1 gets和scanf读取字符串时的差异"></a>6.1 gets和scanf读取字符串时的差异</h2><p>gets（）函数与  scanf（”%s”,&amp;s)  相似，但不完全相同</p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c">    <span class="token keyword">char</span> n<span class="token punctuation">[</span><span class="token number">20</span><span class="token punctuation">]</span> <span class="token punctuation">;</span>
@@ -1077,14 +1078,14 @@ h3:hover {
 <p><strong>使用scanf函数数字符串时存在啊一个问题，如果输入了空格会认为输入字符串结束，<em>空格</em>后的字符将作为下一个输入项处理</strong></p>
 <p><strong>gets（）函数接收输入的整个字符串直到<em>回车</em>为止</strong></p>
 </blockquote>
-<h1 id="7-getche"><a href="#7-getche" class="headerlink" title="7.getche"></a>7.getche</h1><p>getche()是一个比叫有意思的 输入函数，他没有缓冲区，输入一个字符后会立即读取，不用等待用户按下回车键，这是它和scanf()，getchar()的最大区别。</p>
+<h2 id="7-getche"><a href="#7-getche" class="headerlink" title="7.getche"></a>7.getche</h2><p>getche()是一个比叫有意思的 输入函数，他没有缓冲区，输入一个字符后会立即读取，不用等待用户按下回车键，这是它和scanf()，getchar()的最大区别。</p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c">    <span class="token keyword">char</span> n <span class="token punctuation">;</span>
     n <span class="token operator">=</span> <span class="token function">getche</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">;</span>
     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%c"</span><span class="token punctuation">,</span>n<span class="token punctuation">)</span> <span class="token punctuation">;</span>
 <span class="token comment">// 没有按下回车就直接输出了，像这种情况，一般不用这个函数</span>
 
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h1 id="8-getch（）"><a href="#8-getch（）" class="headerlink" title="8.getch（）"></a>8.getch（）</h1><p>getch()也没有缓冲区，输入一个字符会立即读取，不用按下回车键，这一点和getche()相同。但getch()的特别之处是getch()没有回显，看不到输入的字符。（回显就是在控制台显示用户输入的字符；没有回显，就不会显示用户输入的字符）</p>
+<h2 id="8-getch（）"><a href="#8-getch（）" class="headerlink" title="8.getch（）"></a>8.getch（）</h2><p>getch()也没有缓冲区，输入一个字符会立即读取，不用按下回车键，这一点和getche()相同。但getch()的特别之处是getch()没有回显，看不到输入的字符。（回显就是在控制台显示用户输入的字符；没有回显，就不会显示用户输入的字符）</p>
 
             </div>
             <hr/>
@@ -1769,7 +1770,10 @@ h3:hover {
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            1. 什么是ascii码int main()
+                            
+什么是ascii码
+
+int main()
 &#123;
     char c = 'a' ;
     printf("%d",c) ; // 97 
@@ -2071,7 +2075,7 @@ h3:hover {
 
             
               &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total number of words: &nbsp;<span class="white-color">
-                77.6k
+                98.2k
               </span>&nbsp;
               
                 
