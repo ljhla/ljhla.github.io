@@ -240,13 +240,6 @@
   </url>
   
   <url>
-    <loc>http://aalive.top/qingdan/index.html</loc>
-    
-    <lastmod>2023-04-10</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://aalive.top/project/index.html</loc>
     
     <lastmod>2023-04-10</lastmod>
@@ -254,7 +247,7 @@
   </url>
   
   <url>
-    <loc>http://aalive.top/musics/index.html</loc>
+    <loc>http://aalive.top/qingdan/index.html</loc>
     
     <lastmod>2023-04-10</lastmod>
     
@@ -262,6 +255,13 @@
   
   <url>
     <loc>http://aalive.top/lab/index.html</loc>
+    
+    <lastmod>2023-04-10</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://aalive.top/musics/index.html</loc>
     
     <lastmod>2023-04-10</lastmod>
     
@@ -303,14 +303,14 @@
   </url>
   
   <url>
-    <loc>http://aalive.top/collection/index.html</loc>
+    <loc>http://aalive.top/categories/index.html</loc>
     
     <lastmod>2023-04-10</lastmod>
     
   </url>
   
   <url>
-    <loc>http://aalive.top/categories/index.html</loc>
+    <loc>http://aalive.top/collection/index.html</loc>
     
     <lastmod>2023-04-10</lastmod>
     
@@ -347,14 +347,14 @@
 
   
   <url>
-    <loc>http://aalive.top/tags/javaSE/</loc>
+    <loc>http://aalive.top/tags/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2023-05-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://aalive.top/tags/%E7%AE%97%E6%B3%95/</loc>
+    <loc>http://aalive.top/tags/javaSE/</loc>
     <lastmod>2023-05-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -368,14 +368,14 @@
   </url>
   
   <url>
-    <loc>http://aalive.top/tags/python/</loc>
+    <loc>http://aalive.top/tags/c%E8%AF%AD%E6%B3%95%E9%A2%98/</loc>
     <lastmod>2023-05-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://aalive.top/tags/c%E8%AF%AD%E6%B3%95%E9%A2%98/</loc>
+    <loc>http://aalive.top/tags/python/</loc>
     <lastmod>2023-05-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
