@@ -990,14 +990,14 @@ h3:hover {
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-05-07
+                    2023-05-11
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    6.4k
+                    6.5k
                 </div>
                 
 
@@ -1401,7 +1401,7 @@ h3:hover {
     <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%s"</span><span class="token punctuation">,</span>book<span class="token operator">-></span>author<span class="token punctuation">)</span> <span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span>
 
-<span class="token keyword">void</span> <span class="token function">addBook</span><span class="token punctuation">(</span><span class="token keyword">struct</span> <span class="token class-name">Book</span> <span class="token operator">*</span><span class="token operator">*</span>head<span class="token punctuation">)</span>  <span class="token comment">// 这里的插入元素是在链表头插入,两层解引用，取next的地址的值,因为是头插法，可以将其理解为head</span>
+<span class="token keyword">void</span> <span class="token function">addBook</span><span class="token punctuation">(</span><span class="token keyword">struct</span> <span class="token class-name">Book</span> <span class="token operator">*</span><span class="token operator">*</span>head<span class="token punctuation">)</span>  <span class="token comment">// 这里的插入元素是在链表头插入,两层解引用，取next的地址的值,因为是头插法，可以将其理解为head。 补充：因为单链表的创建是创建了一个结构体的指针，所以下面的操作应该为*head，该函数在传递参数的时候只能传递**head，如果传递*head，下面在*head，就直接得到的是head的值，并不是指针类型的了。 </span>
 <span class="token punctuation">&#123;</span>
     <span class="token keyword">struct</span> <span class="token class-name">Book</span> <span class="token operator">*</span>book <span class="token punctuation">,</span> <span class="token operator">*</span> tmp<span class="token punctuation">;</span> <span class="token comment">// 结构体指针</span>
 
@@ -1963,7 +1963,8 @@ typedef struct Date
 
 int main()
 &#123;
-    struct Date *date ;
+    &#x2F;&#x2F;struct Date *date ;
+    PDATE date ;
 
     date &#x3D; (PDATE)malloc(sizeof(DATE)) ;
     ......
@@ -1971,7 +1972,7 @@ int main()
         ....
     ......以下内容同上，省略
 &#125;
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
 <p>可以用typedef封装结构体。</p>
 <p>注意：封装结构体时，一般在下面写两个 一个是结构体的大写名字，一个是加了<em>P+结构体名字，代表该结构体的指针，后面在使用的时候就不要写`struct Date 或者 struct Date </em><code>了， 只需要写</code>DATE , PDATE`, 这是在封装结构体时，起的别名。</p>
@@ -3117,7 +3118,7 @@ float area = PI * radius * radius;
 
             
               &nbsp;<i class="fas fa-chart-area"></i>&nbsp;Total number of words: &nbsp;<span class="white-color">
-                98.2k
+                98.3k
               </span>&nbsp;
               
                 
